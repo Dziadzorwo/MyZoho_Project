@@ -1,6 +1,7 @@
 package com.selenium.ZOHO.project.testcases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class PotentialTest {
 	@Test (priority=1)
