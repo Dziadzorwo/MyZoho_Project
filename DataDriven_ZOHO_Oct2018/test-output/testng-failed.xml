@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteName]" parallel="none">
-  <test name="Login Test(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
       <class name="com.selenium.ZOHO.project.testcases.LoginTest">
         <methods>
           <include name="init"/>
-          <include name="doLoginTest" invocation-numbers="1"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
           <include name="quit"/>
         </methods>
       </class> <!-- com.selenium.ZOHO.project.testcases.LoginTest -->
     </classes>
-  </test> <!-- Login Test(failed) -->
-</suite> <!-- Failed suite [SuiteName] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

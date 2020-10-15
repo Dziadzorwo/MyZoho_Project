@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="86519" started-at="2020-09-26T19:15:30Z" finished-at="2020-09-26T19:16:56Z">
+  <suite name="SuiteName" duration-ms="89002" started-at="2020-10-15T18:40:19Z" finished-at="2020-10-15T18:41:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="86519" started-at="2020-09-26T19:15:30Z" finished-at="2020-09-26T19:16:56Z">
+    <test name="Login Test" duration-ms="88909" started-at="2020-10-15T18:40:19Z" finished-at="2020-10-15T18:41:47Z">
       <class name="com.selenium.ZOHO.project.testcases.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="init" is-config="true" duration-ms="20" started-at="2020-09-26T12:15:31Z" finished-at="2020-09-26T12:15:31Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="init" is-config="true" duration-ms="18" started-at="2020-10-15T11:40:20Z" finished-at="2020-10-15T11:40:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="doLoginTest" duration-ms="22285" started-at="2020-09-26T12:15:31Z" data-provider="getData" finished-at="2020-09-26T12:15:53Z">
+        <test-method status="PASS" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="doLoginTest" duration-ms="25175" started-at="2020-10-15T11:40:20Z" data-provider="getData" finished-at="2020-10-15T11:40:45Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="quit" is-config="true" duration-ms="1195" started-at="2020-09-26T12:15:53Z" finished-at="2020-09-26T12:15:55Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="quit" is-config="true" duration-ms="819" started-at="2020-10-15T11:40:45Z" finished-at="2020-10-15T11:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="doLoginTest" duration-ms="61259" started-at="2020-09-26T12:15:55Z" data-provider="getData" finished-at="2020-09-26T12:16:56Z">
+        <test-method status="PASS" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="doLoginTest" duration-ms="61619" started-at="2020-10-15T11:40:46Z" data-provider="getData" finished-at="2020-10-15T11:41:47Z">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="init" is-config="true" duration-ms="0" started-at="2020-09-26T12:15:55Z" finished-at="2020-09-26T12:15:55Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="init" is-config="true" duration-ms="0" started-at="2020-10-15T11:40:46Z" finished-at="2020-10-15T11:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="quit" is-config="true" duration-ms="486" started-at="2020-09-26T12:16:56Z" finished-at="2020-09-26T12:16:56Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.ZOHO.project.testcases.LoginTest@23348b5d]" name="quit" is-config="true" duration-ms="270" started-at="2020-10-15T11:41:47Z" finished-at="2020-10-15T11:41:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.selenium.ZOHO.project.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+    <test name="Lead Test" duration-ms="20" started-at="2020-10-15T18:41:48Z" finished-at="2020-10-15T18:41:48Z">
+      <class name="com.selenium.ZOHO.project.testcases.LeadTest">
+        <test-method status="PASS" signature="createLeadTest()[pri:0, instance:com.selenium.ZOHO.project.testcases.LeadTest@1190200a]" name="createLeadTest" duration-ms="4" started-at="2020-10-15T11:41:48Z" finished-at="2020-10-15T11:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="convertLeadTest()[pri:0, instance:com.selenium.ZOHO.project.testcases.LeadTest@1190200a]" name="convertLeadTest" duration-ms="2" started-at="2020-10-15T11:41:48Z" depends-on-methods="com.selenium.ZOHO.project.testcases.LeadTest.createLeadTest" finished-at="2020-10-15T11:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadTest -->
+        <test-method status="PASS" signature="deleteLeadAccountTest()[pri:0, instance:com.selenium.ZOHO.project.testcases.LeadTest@1190200a]" name="deleteLeadAccountTest" duration-ms="2" started-at="2020-10-15T11:41:48Z" depends-on-methods="com.selenium.ZOHO.project.testcases.LeadTest.convertLeadTest, com.selenium.ZOHO.project.testcases.LeadTest.createLeadTest" finished-at="2020-10-15T11:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLeadAccountTest -->
+      </class> <!-- com.selenium.ZOHO.project.testcases.LeadTest -->
+    </test> <!-- Lead Test -->
+    <test name="Potential Test" duration-ms="12" started-at="2020-10-15T18:41:48Z" finished-at="2020-10-15T18:41:48Z">
+      <class name="com.selenium.ZOHO.project.testcases.PotentialTest">
+        <test-method status="PASS" signature="createPotentialTest()[pri:0, instance:com.selenium.ZOHO.project.testcases.PotentialTest@7ee8290b]" name="createPotentialTest" duration-ms="2" started-at="2020-10-15T11:41:48Z" finished-at="2020-10-15T11:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPotentialTest -->
+        <test-method status="PASS" signature="deletePotentialAccountTest()[pri:0, instance:com.selenium.ZOHO.project.testcases.PotentialTest@7ee8290b]" name="deletePotentialAccountTest" duration-ms="2" started-at="2020-10-15T11:41:48Z" depends-on-methods="com.selenium.ZOHO.project.testcases.PotentialTest.createPotentialTest" finished-at="2020-10-15T11:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePotentialAccountTest -->
+      </class> <!-- com.selenium.ZOHO.project.testcases.PotentialTest -->
+    </test> <!-- Potential Test -->
+  </suite> <!-- SuiteName -->
 </testng-results>

@@ -6,7 +6,7 @@
       <class name="com.selenium.ZOHO.project.testcases.LoginTest">
         <methods>
           <include name="init"/>
-          <include name="doLoginTest" invocation-numbers="1"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
           <include name="quit"/>
         </methods>
       </class> <!-- com.selenium.ZOHO.project.testcases.LoginTest -->
