@@ -263,7 +263,7 @@ public class BaseTest {
 	
 	/************************App functions*****************************/
 	
-	public boolean doLogin(String username,String password) {
+	public void doLogin(String username,String password) throws InterruptedException {
 		test.log(LogStatus.INFO, "Trying to login with "+ username+","+password);
 		click("loginLink_xpath");
 		wait(1);
@@ -275,15 +275,28 @@ public class BaseTest {
 		click("nextButton_xpath");
 		type("password_xpath",password);
 		click("signinButton_xpath");
+		//wait(3);
+		//click("/html/body/div[5]/div[3]/div[5]/button[1]");
 		
-		if(isElementPresent("crmlink_xpath")){
+		try {
+		// explicit wait - to wait for the compose button to be click-able
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")));
+		// click on the compose button as soon as the "compose" button is visible
+		driver.findElement(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")).click();
+		
+		if((isElementPresent("crmlink_xpath"))||(driver.getTitle()=="Zoho Home")){
 			test.log(LogStatus.INFO, "Login Success");
-			return true;
+			//return true;
 		}
-		else{
+		}catch( Exception e)
+		{
+		//else{
 			test.log(LogStatus.INFO, "Login Failed");
-			return false;
+			System.out.println("Login Failed");
+			//return false;
 		}
+		//return gridRun;
 		
 	}
 	

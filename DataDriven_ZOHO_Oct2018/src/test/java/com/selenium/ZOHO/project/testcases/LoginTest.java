@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest{
 	
 	
 	@Test(dataProvider = "getData")
-	public void doLoginTest(Hashtable<String, String> data) {
+	public void doLoginTest(Hashtable<String, String> data) throws InterruptedException {
 		// log test progress
 		test = rep.startTest("LoginTest");
 		test.log(LogStatus.INFO , data.toString());
