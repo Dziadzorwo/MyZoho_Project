@@ -275,14 +275,15 @@ public class BaseTest {
 		click("nextButton_xpath");
 		type("password_xpath",password);
 		click("signinButton_xpath");
+		//wait(3);
+		//click("/html/body/div[5]/div[3]/div[5]/button[1]");
 		
 		try {
 		// explicit wait - to wait for the compose button to be click-able
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("checklink_xpath")));
-		
+		WebDriverWait wait = new WebDriverWait(driver,35);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")));
 		// click on the compose button as soon as the "compose" button is visible
-		driver.findElement(By.xpath("checklink_xpath")).click();
+		driver.findElement(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")).click();
 		
 		if((isElementPresent("crmlink_xpath"))||(driver.getTitle()=="Zoho Home")){
 			test.log(LogStatus.INFO, "Login Success");
@@ -295,7 +296,7 @@ public class BaseTest {
 			//System.out.println("Login Failed");
 			//return false;
 		}
-		
+		//return gridRun;
 		
 	}
 	
