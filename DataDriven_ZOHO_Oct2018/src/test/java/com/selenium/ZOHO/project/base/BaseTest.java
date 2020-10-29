@@ -279,11 +279,16 @@ public class BaseTest {
 		//click("/html/body/div[5]/div[3]/div[5]/button[1]");
 		
 		try {
-		// explicit wait - to wait for the compose button to be click-able
+		// explicit wait - to wait for the Trust  button to be click-able
 		WebDriverWait wait = new WebDriverWait(driver,35);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")));
-		// click on the compose button as soon as the "compose" button is visible
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("checklink_xpath")));
+		
+		// click on the Trust  button as soon as the "Trust " button is visible
 		driver.findElement(By.xpath("/html/body/div[5]/div[3]/div[5]/button[1]")).click();
+		
+		//driver.findElement(By.xpath("checklink_xpath")).click();
 		
 		if((isElementPresent("crmlink_xpath"))||(driver.getTitle()=="Zoho Home")){
 			test.log(LogStatus.INFO, "Login Success");
